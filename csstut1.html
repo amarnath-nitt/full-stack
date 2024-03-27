@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Apply CSS</title>
+    <link rel="stylesheet" href="externalcss1.css" />
+  </head>
+  <body>
+    <!-- property : values -->
+    <!-- Selectors:
+    combined selectros : more than one elements
+    class selectors classname: {
+      property:value;
+    }
+    attribute selector : <a href="www.example.com">
+      a[href="www.example.com"]{
+        property:value
+      }
+    id selector : #idName{
+      property: value;
+    }
+    psudo class selectors : hover, : visited
+    selector : pseduselector-class{
+      property:value;
+    }
+    psudo element selector
+    p:: first-line{
+      color: brown;
+    }
+    combinator selector:
+    article>p{
+      property:value;
+    }
+    universal selector : *{
+      property:value;
+    }
+    -->
+    <ul>
+      <li class="a">List1</li>
+      <li class="a b">List2</li>
+      <li class="ab">List3</li>
+    </ul>
+
+    <header>
+      <h1 class="special">Our title</h1>
+      <nav>
+        <ul>
+          <li class="special"><a href="/">Home</a><em> Emphasized</em></li>
+          <li>Forms</li>
+        </ul>
+      </nav>
+    </header>
+    <section class="special">
+      <h2>Our Section</h2>
+      <p>This is our section</p>
+    </section>
+  </body>
+</html>

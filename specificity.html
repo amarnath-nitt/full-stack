@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* ul#cool-drinks li.list1{
+            color: red;
+            font-weight: bold;
+        }
+        ul#cool-drinks li.list1{
+            font-size: 14px;
+            color: blue;
+            font-weight: normal;
+        } */
+        .list1{
+            color: red;
+        }
+        .list1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- If specificity is same for multiple css elements then first one will be applied. Else which one will have higher specificity will be applied to element -->
+
+    <ul id="cool-drinks">
+        <li class="list1">Sprite</li>
+        <li class="list2">Dew</li>
+        <li class="list3">Pepsi</li>
+    </ul>
+</body>
+</html>
