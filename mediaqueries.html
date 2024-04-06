@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font: 14px Georgia;
+            background: #ccc;
+        }
+        article, aside, figure, footer, header, hgroup, menu, nav, section{
+            display: block;
+        }
+        h2{
+            font: 2px Georgia;
+            margin: 0 0 10px 0;
+        }
+        h3{
+            margin: 0 0 8px 0;
+        }
+        p{
+            margin: 0 0 20px 0;
+            background: rgb(155, 84, 84);
+        }
+        #fluid-wrap{
+            width: 70%;
+            margin: 60px auto;
+            padding: 20px;
+            background: #ccc;
+            overflow: hidden;
+        }
+        #sidebar{
+            width: 35%;
+            float: left;
+        }
+        #sidebar ul{
+            list-style: none;
+        }
+        #sidebar ul li a{
+            color: red;
+            text-decoration: none;
+            padding: 3px 0;
+            display: block;
+        }
+        #main-content{
+            width: 65%;
+            float: rigth;
+        }
+        @media all and (min-width: 100px){
+            #sidebar ul li a:after{
+                content: attr(data-email);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="fluid-wrap">
+        <div id="sidebar">
+            <h3>Our Webpage</h3>
+            <ul id="idnav">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Address</a></li>
+                <li><a href="/">City</a></li>
+            </ul>
+        </div>
+        <div id="main-content">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur consequatur maxime placeat ipsam odio temporibus accusamus obcaecati natus neque eius laboriosam dolore libero expedita tenetur ex ab illum eum labore id, nemo repudiandae ipsa eos non? Officiis provident perferendis incidunt ad aspernatur laborum est? Provident eum numquam nemo optio assumenda tempore placeat explicabo aspernatur illo quasi ullam doloremque iste temporibus odit ut aut aperiam dicta praesentium deleniti adipisci porro, quisquam quaerat! Exercitationem assumenda, praesentium illum sed nihil, modi vel expedita commodi quam deleniti corrupti optio soluta consequatur iusto reprehenderit dignissimos tempora eius. Sed, officia debitis. Impedit dicta provident aut voluptate illo vitae ipsum, eligendi omnis molestias quo? Soluta voluptatem, veritatis aliquam, et aliquid magnam sapiente, alias exercitationem debitis ratione voluptatibus porro cum vero repellat labore explicabo enim sequi. Doloremque expedita corporis modi itaque, architecto veritatis amet incidunt alias quo accusantium mollitia nisi nobis adipisci laudantium inventore sed voluptate ipsum assumenda ipsam ab quas! Architecto voluptatibus asperiores consectetur, quisquam accusantium illo sunt quidem sapiente expedita et ipsum, id, velit minima quam harum similique aperiam ipsa eaque ea. Temporibus iste odit itaque nihil mollitia aspernatur dignissimos tempora possimus facilis. Facere blanditiis totam beatae corporis sunt dicta repudiandae a dignissimos. Possimus, explicabo architecto!</p>
+        </div>
+    </div>
+</body>
+</html>
